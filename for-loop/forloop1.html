@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-loop</title>
+</head>
+<body>
+    <input type="text" id="num" placeholder="Enter n"/> <br/>
+    <p id="paragraph"></p>
+    <button type="button" onclick="generateNum()">Generate Numbers</button>
+
+    <script>
+        function generateNum(){
+            const n = parseInt(document.getElementById('num').value);
+
+            const p = document.getElementById('paragraph');
+            p.innerHTML= '';
+
+            for(i=1; i<=n; i++)
+            {
+                p.innerHTML = p.innerHTML + `${i},`
+            }
+        }
+    </script>
+</body>
+</html>
