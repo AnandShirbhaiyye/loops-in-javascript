@@ -16,12 +16,18 @@
         const n = parseInt(document.getElementById("num").value);
 
         const p = document.getElementById("paragraph");
-        p.innerHTML = "";
+        p.innerHTML = " ";
 
-        for (let i = 1; i <= n; i++) {
-          if (i % 2 == 1) {
-            p.innerHTML = p.innerHTML + `${i},`;
-          }
+        // for (let i = 1; i <= n; i++) {
+        //   if (i % 2 == 1) {
+        //     p.innerHTML = p.innerHTML + `${i},`;
+        //   }
+        // }
+
+        // or
+
+        for (let i = 1; i <= n; i=i+2) {
+         p.innerHTML = p.innerHTML + `${i},`;
         }
       }
     </script>
